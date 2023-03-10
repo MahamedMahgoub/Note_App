@@ -12,8 +12,13 @@ class animated_Screen extends StatelessWidget {
       splashTransition: SplashTransition.fadeTransition,
       pageTransitionType: PageTransitionType.leftToRight,
       splashIconSize: 200,
-      splash: Image.asset(
-        'assets/images/notebook.png',
+      splash: Container(
+        width: 200,
+        height: 400,
+        child: Image.asset(
+          'assets/images/note.png',
+          fit: BoxFit.cover,
+        ),
       ),
       nextScreen: HomeScreen(),
     );
